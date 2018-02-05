@@ -1,11 +1,28 @@
 const path = require('path');
 const webpack = require('webpack')
 
+const VENDOR_LIBS = [
+    'axios',
+    'bootstrap',
+    // 'font-awesome',
+    'jquery',
+    'react',
+    'react-dom',
+    'react-redux',
+    'react-router-dom',
+    'redux',
+    'redux-thunk',
+];
+
+
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        bundle: './src/index.js',
+        vendor: VENDOR_LIBS
+    },
     output: {
         path: path.join(__dirname, 'dist'),
-        filename: 'bundle.js',
+        filename: '[name].js',
     },
     module: {
         rules: [
