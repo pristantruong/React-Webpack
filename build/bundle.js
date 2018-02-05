@@ -70,16 +70,7 @@
 "use strict";
 
 
-var _math = __webpack_require__(1);
-
-var _math2 = _interopRequireDefault(_math);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var total = (0, _math2.default)(3, 5); // const sum = require('./math');
-
-console.log(total);
-document.write(total);
+__webpack_require__(1);
 
 /***/ }),
 /* 1 */
@@ -88,15 +79,17 @@ document.write(total);
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-var sum = function sum(a, b) {
-    return a + b;
-};
+__webpack_require__(2);
 
-// module.exports = sum;
-exports.default = sum;
+var image = document.createElement('img');
+image.src = 'http://lorempixel.com/400/400/';
+document.body.appendChild(image);
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
